@@ -64,8 +64,10 @@
           </div>
 
           <form action="">
-            <input type="email" placeholder="ash@loremcompany.com" />
-            <button type="button">Subscribe to monthly newsletter</button>
+            <input id="email" type="email" placeholder="ash@loremcompany.com" />
+            <button id="open" type="submit">
+              Subscribe to monthly newsletter
+            </button>
           </form>
         </div>
         <div class="images">
@@ -76,11 +78,30 @@
         </div>
       </div>
     </div>
+    <div class="error-pop-up">
+      <div class="error-message"></div>
+    </div>
+    <div id="modal_container" class="success-pop-up">
+      <div class="success-message">
+        <img src="./assets/images/icon-success.svg" alt="" />
+        <div class="success-content">
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to <span></span>. Please open it
+            and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <div class="dismiss-message-button">
+          <button id="close">Dismiss message</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
 
     <!-- Success message end -->
+    <script src="/newsletter-sign-up-with-success-message-main/index.js"></script>
   </body>
 </html>
